@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chris.factorialcalculator.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:weightSum="1"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="-148dp"
+            tools:layout_editor_absoluteY="8dp"
+            android:layout_weight="0.66">
+
+            <EditText
+                android:id="@+id/input"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                tools:layout_editor_absoluteX="84dp"
+                tools:layout_editor_absoluteY="260dp"
+                android:layout_weight="3.02"
+                android:hint="Enter number"/>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Calculate"
+                tools:layout_editor_absoluteX="237dp"
+                tools:layout_editor_absoluteY="61dp"
+                android:layout_weight="0.67" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="fill_parent"
+            android:layout_height="78dp"
+
+            android:layout_weight="0.01"
+            android:textAlignment="center"
+            android:textSize="50dp"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
